@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="342.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lv7.HelloController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="323.4" minHeight="10.0" prefHeight="306.4" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="185.4" minHeight="0.0" prefHeight="94.40000000000003" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox prefHeight="289.0" prefWidth="300.0" GridPane.columnIndex="1">
+         <children>
+            <VBox prefHeight="315.0" prefWidth="145.0">
+               <children>
+                  <Label text="Ime:">
+                     <VBox.margin>
+                        <Insets bottom="19.0" left="19.0" right="19.0" top="19.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Prezime:">
+                     <VBox.margin>
+                        <Insets bottom="19.0" left="19.0" right="19.0" top="19.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="E-mail:">
+                     <VBox.margin>
+                        <Insets bottom="19.0" left="19.0" right="19.0" top="19.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Korisnicko ime:">
+                     <VBox.margin>
+                        <Insets bottom="19.0" left="19.0" right="19.0" top="19.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Lozinka:">
+                     <VBox.margin>
+                        <Insets bottom="19.0" left="19.0" right="19.0" top="19.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="246.0" prefWidth="189.0">
+               <children>
+                  <TextField fx:id="imeID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="prezimeID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="emailID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="korisnickoImeID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="lozinkaID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </PasswordField>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+      </HBox>
+      <ButtonBar prefHeight="165.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <buttons>
+          <Button fx:id="dodajBtn" mnemonicParsing="false" onAction="#DodajKorisnika" text="Dodaj" />
+            <Button id="krajID" fx:id="krajBtn" mnemonicParsing="false" onAction="#ZavrsiProgram" text="Kraj" />
+        </buttons>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </ButtonBar>
+      <ListView fx:id="listaKorisnika" onMouseClicked="#popuniPodatkeKorisnika" prefHeight="200.0" prefWidth="200.0">
+         <GridPane.margin>
+            <Insets bottom="20.0" left="15.0" top="20.0" />
+         </GridPane.margin>
+      </ListView>
+   </children>
+</GridPane>
